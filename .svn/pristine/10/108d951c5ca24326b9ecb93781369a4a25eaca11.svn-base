@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>OUI Demo</title>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="./demo.css">
+    <link rel="stylesheet" href="./demo_v2.css">
+    <script src="../lib/zepto.min.js"></script>
+</head>
+
+<body ontouchstart>
+        <!-- <h1>对话框 dialog</h1> -->
+
+    <!-- <footer class="ui-footer ui-footer-btn">
+        <ul class="ui-tiled ui-border-t">
+            <li data-href="index.html" class="ui-border-r">
+                <div>基础样式</div>
+            </li>
+            <li data-href="ui.html" class="ui-border-r">
+                <div>UI组件</div>
+            </li>
+            <li data-href="js.html">
+                <div>JS插件</div>
+            </li>
+        </ul>
+    </footer> -->
+    <section class="ui-container">
+
+
+<section id="dialog">
+    <h1 class="title">DIALOG</h1>
+	<div class="demo-item">
+		<p class="demo-desc">对话框</p>
+		<div class="demo-block">
+			<!-- 带标题文字消息 -->
+			<div class="ui-dialog" id="dialog1">
+			    <div class="ui-dialog-cnt">
+			        <div class="ui-dialog-bd">
+			            <h4>下线通知</h4>
+			            <p>你的账号于17:00在一台Android手机登录。如非本人操作，密码可能已泄露，建议立即冻结账号。</p>
+			        </div>
+			        <div class="ui-dialog-ft">
+			            <button type="button" data-role="button">退出</button>
+			            <button type="button" data-role="button" class="btn-recommand">重新登录</button>
+			        </div>
+			    </div>        
+			</div>
+			<!-- 无标题文字消息 -->
+			<div class="ui-dialog" id="dialog2">
+			    <div class="ui-dialog-cnt">
+			        <div class="ui-dialog-bd">
+			            <h4>将终止文件发送，确定返回？</h4>
+			        </div>
+			        <div class="ui-dialog-ft">
+			            <button type="button" data-role="button">取消</button>
+			            <button type="button" data-role="button">确定</button>
+			        </div>
+			    </div>        
+			</div>
+			<!-- 结构化消息 -->
+			<div class="ui-dialog ui-dialog-function" id="dialog3">
+				<div class="ui-dialog-cnt">
+					<div class="ui-dialog-bd">
+						<h4>发送到 seame芝麻</h4>
+						<div class="ui-dialog-item">
+							<div class="ui-img">
+								<span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span>
+							</div>
+							<div class="ui-dialog-info">
+					            <h5 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h5>
+					            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+					            <span class="ui-nowrap">应用 开眼</span>
+					        </div>
+						</div>
+					</div>
+					<div class="ui-dialog-ft">
+			            <button type="button" data-role="button">取消</button>
+			            <button type="button" data-role="button">确定</button>
+			        </div>
+				</div>
+			</div>
+			<!-- 运营提示弹窗 双项选择-->
+			<div class="ui-dialog" id="dialog4">
+				<div class="ui-dialog-cnt">
+					<div class="ui-dialog-hd">
+						<span style="background-image:url(http://placeholder.qiniudn.com/592x232)"></span>
+					</div>
+					<div class="ui-dialog-bd">
+			            <h4>升级提示</h4>
+			            <p>空间弹幕来袭，祝福弹弹弹！图片更个性，PO图不再难。</p>
+			        </div>
+			        <div class="ui-dialog-ft">
+			            <button type="button" data-role="button">退出</button>
+			            <button type="button" data-role="button">立即升级</button>
+			        </div>
+				</div>
+			</div>
+			<!-- 运营提示弹窗 多项选择-->
+			<div class="ui-dialog" id="dialog5">
+				<div class="ui-dialog-cnt">
+					<div class="ui-dialog-hd">
+						<span style="background-image:url(http://placeholder.qiniudn.com/592x232)"></span>
+					</div>
+					<div class="ui-dialog-bd">
+			            <h4>我们一直在努力跪求好评，么么哒！爱你哟！</h4>
+			        </div>
+			        <div class="ui-dialog-ft ui-dialog-ft-muti">
+			            <button type="button" data-role="button">好评</button>
+			            <button type="button" data-role="button">还要努力</button>
+			            <button type="button" data-role="button">取消</button>
+			        </div>
+				</div>
+			</div>
+		</div>
+		<div class="ui-btn-wrap" id="btn1"><button class="ui-btn-lg">文字提示(带标题)</button></div>
+		<div class="ui-btn-wrap" id="btn2"><button class="ui-btn-lg">文字提示(不带标题)</button></div>
+		<div class="ui-btn-wrap" id="btn3"><button class="ui-btn-lg">结构化消息提示</button></div>
+		<div class="ui-btn-wrap" id="btn4"><button class="ui-btn-lg">运营提示(双项选择)</button></div>
+		<div class="ui-btn-wrap" id="btn5"><button class="ui-btn-lg">运营提示(多项选择)</button></div>
+	</div>
+</section>
+<script type="text/javascript">
+	$("#btn1").click(function(){
+		$("#dialog1").addClass("show");
+	});
+	$("#btn2").click(function(){
+		$("#dialog2").addClass("show");
+	});
+	$("#btn3").click(function(){
+		$("#dialog3").addClass("show");
+	});
+	$("#btn4").click(function(){
+		$("#dialog4").addClass("show");
+	});
+	$("#btn5").click(function(){
+		$("#dialog5").addClass("show");
+	});
+	$(".ui-dialog button").click(function(){
+		$('.ui-dialog').removeClass("show");
+	})
+</script>
+
+        </section><!-- /.ui-container-->
+        <script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index_v2.html';
+        });
+        </script>
+    </body>
+</html>

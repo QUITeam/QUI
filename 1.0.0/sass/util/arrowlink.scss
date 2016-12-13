@@ -1,0 +1,11 @@
+
+/* 箭头链接 */
+.ui-arrowlink{
+    position: relative;
+    &:before{
+        @include arrowlink;
+    }
+}
+.ui-arrowlink.active{
+    background: $active-bg;
+}

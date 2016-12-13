@@ -1,0 +1,88 @@
+html{
+    width: 100%;
+    /*overflow: hidden;*/
+}
+body{
+  -webkit-user-select:initial;
+  background-color: #fff;
+  width: 100%;
+  /*overflow: hidden;*/
+}
+h1{
+    font-size: 40px;
+    color: #000;
+    padding-top: 55px;
+    text-align: center;
+}
+
+.demo-block td{
+    width: 33.33%;
+    /*padding-top: 33.33%;*/
+    position: relative;
+}
+.demo-block td>div{
+    padding: 25px 0 25px 0;
+    background: #fff;
+}
+.demo-block td>div:active{
+    background: #e4e4e4;
+}
+.demo-block .tit{
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+}
+.demo-block .icon{
+    width: 46px;
+    height: 46px;
+    margin: 0 auto;
+    /*margin-bottom: 5px;*/
+}
+.icon-actionsheet{
+    background: url(img/actionsheet.png) no-repeat;
+    background-size: 100% auto;
+}
+.icon-article{
+    background: url(img/article.png) no-repeat;
+    background-size: 100% auto;
+}
+.icon-button{
+    background: url(img/button.png) no-repeat;
+    background-size: 100% auto;
+}
+.icon-cell{
+    background: url(img/cell.png) no-repeat;
+    background-size: 100% auto;
+}
+.icon-dialog{
+    background: url(img/dialog.png) no-repeat;
+    background-size: 100% auto;
+}
+.icon-icons{
+    background: url(img/icons.png) no-repeat;
+    background-size: 100% auto;
+}
+.icon-msg{
+    background: url(img/msg.png) no-repeat;
+    background-size: 100% auto;
+}
+.icon-panel{
+    background: url(img/panel.png) no-repeat;
+    background-size: 100% auto;
+}
+.icon-progress{
+    background: url(img/progress.png) no-repeat;
+    background-size: 100% auto;
+}
+.icon-searchbar{
+    background: url(img/searchbar.png) no-repeat;
+    background-size: 100% auto;
+}
+.icon-tab{
+    background: url(img/tab.png) no-repeat;
+    background-size: 100% auto;
+}
+.icon-toast{
+    background: url(img/toast.png) no-repeat;
+    background-size: 100% auto;
+}

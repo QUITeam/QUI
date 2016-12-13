@@ -1,0 +1,203 @@
+  
+/**
+ * 弹窗类
+ */
+.ui-dialog{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: $z-index-overlay;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	background: $mask-bg;
+	display: none;
+}
+.ui-dialog.show{
+	display: -webkit-box;
+	display: box;
+}
+.ui-dialog-cnt{
+	border-radius: $dialog-border-radius;
+	width: $dialog-cnt-width;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	pointer-events: auto;
+	background-color: $dialog-cnt-bg;
+	position: relative;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    border-top: 4px solid $dialog-blue;
+    -webkit-box-sizing: border-box;
+    color: $dialog-color;
+}
+.ui-dialog-bd{
+	min-height: $dialog-bd-height-min;
+	border-top-left-radius: $dialog-border-radius;
+	border-top-right-radius: $dialog-border-radius;
+	// padding: $dialog-bd-padding;
+    padding: 18px 28px 20px 28px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	-webkit-box-orient: vertical;
+    -webkit-box-sizing: border-box;
+}
+.ui-dialog-bd > h4{
+    font-size: 18px;
+    width: auto;
+    margin: 0 auto;
+
+}
+.ui-dialog-bd > p{
+    // margin-top: 16px;
+    margin-top: 8px;
+    font-size: $font-size-base;
+    width: auto;
+    // line-height: $line-height-base;
+    line-height: 1.5;
+}
+.ui-dialog-ft{
+    border-bottom-left-radius: $dialog-border-radius;
+	border-bottom-right-radius: $dialog-border-radius;
+    display: -webkit-box;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    border-top: 1px solid $bordercolor;
+    height: $dialog-ft-height;
+    line-height: $dialog-ft-height;
+}
+.ui-dialog-ft button{
+    color: $dialog-color;
+    text-align: center;
+    border-right: 1px $bordercolor solid;
+    width: 100%;
+    line-height: $dialog-ft-height;
+    background: transparent;
+    display: block;
+    margin: 0 !important;
+    -webkit-box-flex: 1;
+    &.btn-recommand{
+        color: $dialog-blue;
+    }
+    &:active {
+        background-color: $dialog-btn-active !important;
+    }
+    &:first-child{
+        border-bottom-left-radius: $dialog-border-radius;
+    }
+    &:last-child{
+        border-right: 0;
+        border-bottom-right-radius:$dialog-border-radius;
+    }     
+}
+@media screen and (-webkit-min-device-pixel-ratio:2.0){
+    .ui-dialog-ft{
+        position: relative;
+        border: 0;
+        background-position: left top; 
+        background-image: $border-t;
+        background-repeat: repeat-x;
+        -webkit-background-size: 100% 1px;
+    }
+    .ui-dialog-ft button{
+        border-right: 0;
+        background-position: right top;
+        background-image: $border-r;
+        background-repeat: repeat-y;
+        -webkit-background-size: 1px 100%;
+        &:last-child{
+            background: none;
+        } 
+    }
+}
+// 结构化消息
+.ui-dialog-function .ui-dialog-bd{
+    // padding: 24px 20px;
+    padding: 22px 20px  20px 24px;
+    -webkit-box-align: inherit;
+}
+.ui-dialog-function h4{
+    text-align: left;
+}
+.ui-dialog-function .ui-dialog-item {
+    // margin-top: 16px;
+    margin-top: 11px;
+    background-color: #fff;
+    width: 100%;
+    display: -webkit-box;
+}
+.ui-dialog-function .ui-img {
+    width: 70px;
+    height: 70px;
+    padding-top: 0;
+    margin-right: 10px;
+}
+.ui-dialog-function .ui-dialog-info {
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    line-height: $line-height-base;
+}
+.ui-dialog-function .ui-dialog-info>h5 {
+    font-size: $font-size-base;
+}
+.ui-dialog-function .ui-dialog-info>p{
+    font-size: $font-size-base;
+    color: #777;
+}
+.ui-dialog-function .ui-dialog-info>span{
+    display: block;
+    font-size: 14px;
+    color: #777;
+}
+// 运营提示
+.ui-dialog-hd{
+    width: $dialog-cnt-width;
+    height: 116px;
+    margin-top: -4px;
+}
+.ui-dialog-hd>span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+}
+// 多项选择
+.ui-dialog-ft-muti{
+    -webkit-box-orient: vertical;
+    height: auto;
+    line-height: auto;
+}
+.ui-dialog-ft-muti button{
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 45px;
+    line-height: 45px;
+    border-right: 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+.ui-dialog-ft-muti button:last-child{
+    border-bottom: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio:2.0){
+    .ui-dialog-ft-muti button{
+        position: relative;
+        border: 0;
+        background-position: left bottom; 
+        background-image: $border-b;
+        background-repeat: repeat-x;
+        -webkit-background-size: 100% 1px;
+        &:last-child{
+            background: none;
+        } 
+    }
+}

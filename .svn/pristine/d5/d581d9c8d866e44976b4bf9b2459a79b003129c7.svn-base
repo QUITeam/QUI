@@ -1,0 +1,43 @@
+
+//图片占位
+.ui-img-vertical,
+.ui-img-horizontal,
+.ui-img,
+.ui-img-banner,
+.ui-img-cover,
+.ui-col-img{
+    @include placehold-img;
+    img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    width: 100%;
+    &.active{
+        opacity: .5;
+    }
+
+}
+.ui-img{
+  width: 100%;
+  padding-top: $ui-img;
+}
+.ui-img-vertical{
+    width: 100%;
+    padding-top: $ui-img-vertical;
+}
+.ui-img-horizontal{
+  width: 100%;
+  padding-top: $ui-img-horizontal;
+}
+
+.ui-img-banner{
+  width: 100%;
+  padding-top: $ui-img-banner;
+}
+.ui-img-cover{
+  width: 100%;
+  padding-top: $ui-img-cover
+}

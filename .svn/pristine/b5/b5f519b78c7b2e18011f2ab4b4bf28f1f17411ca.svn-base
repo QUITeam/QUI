@@ -1,0 +1,55 @@
+
+.ui-btn-progress{
+
+    width: $button-width;
+    padding: 0;
+    .ui-btn-inner{
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        height: 100%;
+        overflow: hidden;
+        background-color: $button-progress-bg-color;
+        border-bottom-left-radius: $button-border-radius-s;
+        border-top-left-radius: $button-border-radius-s;
+        border-top:1px solid #18b4ed;
+        border-bottom:1px solid #18b4ed;
+        border-left:1px solid #18b4ed;
+        span{
+            display: inline-block;
+            color:#000;
+            position: absolute;
+            width: $button-width; 
+            left: 0;
+        }
+    }
+    &.active,&:active{
+            background-color: $button-progress-bg-color;
+            background-clip: padding-box;
+            border: 1px solid #c3c8cc;
+    }
+
+    &:not(.disabled):not(:disabled):active{
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #c3c8cc;
+    }
+
+    &.disabled,&:disabled{
+        background-color: $button-progress-bg-color;
+        color: #000;
+        border: 1px solid $button-progress-disabled-border-color;
+        background-clip: padding-box;
+    }
+}
+
+// @media screen and (-webkit-min-device-pixel-ratio: 2) {
+//     .ui-btn-progress.disabled,
+//     .ui-btn-progress:disabled{
+//         border: 0;
+//     }
+//     .ui-btn-progress.disabled:before,
+//     .ui-btn-progress:disabled:before{
+//         border: 1px solid $button-progress-disabled-border-color;
+//     }
+// }

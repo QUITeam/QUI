@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>OUI Demo</title>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="./demo.css">
+    <link rel="stylesheet" href="./demo_v2.css">
+    <script src="../lib/zepto.min.js"></script>
+</head>
+
+<body ontouchstart>
+        <!-- <h1> tooltips</h1> -->
+
+    <!-- <footer class="ui-footer ui-footer-btn">
+        <ul class="ui-tiled ui-border-t">
+            <li data-href="index.html" class="ui-border-r">
+                <div>基础样式</div>
+            </li>
+            <li data-href="ui.html" class="ui-border-r">
+                <div>UI组件</div>
+            </li>
+            <li data-href="js.html">
+                <div>JS插件</div>
+            </li>
+        </ul>
+    </footer> -->
+    <section class="ui-container">
+
+
+<section id="tooltips">
+    <h1 class="title">TIPS</h1>
+    <div class="demo-item">
+        <p class="demo-desc">引导、警示提示</p>
+        <div class="demo-block">
+            <div class="ui-tooltips ui-tooltips-warn">
+                <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
+                    <i></i>无法连接服务器，请检查你的网络设置。
+                </div>
+            </div>
+            <div class="ui-tooltips ui-tooltips-warn">
+                <div class="ui-tooltips-cnt ui-border-b">
+                    <i></i>无法连接服务器，请检查你的网络设置。<a class="ui-icon-close"></a>
+                </div>
+            </div>
+          <!--   <div class="ui-tooltips ui-tooltips-guide">
+                <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
+                    <i class="ui-icon-talk"></i>进行时状态相关进行时状态相关进行时状态相关进行时状态相关
+                </div>
+            </div>
+            <div class="ui-tooltips ui-tooltips-guide">
+                <div class="ui-tooltips-cnt ui-border-b">
+                    <i></i>新手引导、新功能推荐、广告推广等。新手引导、新功能推荐、广告推广等。<a class="ui-icon-close"></a>
+                </div>
+            </div> -->
+            <div class="ui-tooltips ui-tooltips-hignlight">
+                <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
+                    <i></i>无法连接服务器，请检查你的网络设置。
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        </section><!-- /.ui-container-->
+        <script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index_v2.html';
+        });
+        </script>
+    </body>
+</html>

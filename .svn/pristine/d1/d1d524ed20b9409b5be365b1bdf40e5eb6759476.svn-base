@@ -1,0 +1,30 @@
+
+.ui-tips{
+    padding: $tips-padding;
+    font-size: $font-size-info;
+    color: #fff;
+    i{
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+        vertical-align: top;
+        padding-right: 6px;
+    }
+}
+.ui-tips-info{
+    background: #12B7F5;
+}
+.ui-tips-warn{
+    background: #FE6C6C;
+}
+.ui-tips-success{
+    background: #37C47F;
+}
+.ui-tips i:before{
+    @include icon-tips;
+    content: $icon-warn;
+    color: $tips-info;
+}
+.ui-tips-success i:before{
+    content: $icon-success;
+}

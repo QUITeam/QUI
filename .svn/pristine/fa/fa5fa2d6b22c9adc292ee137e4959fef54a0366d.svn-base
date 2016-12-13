@@ -1,0 +1,15 @@
+
+.am-tab{
+	-webkit-transition:all 0.5s cubic-bezier(0, 0, 0.55, 1.42);
+}
+
+
+.ui-actionsheet.show .am-actionsheet-down{
+	-webkit-transform:translate3d(0,100%,0);
+	-webkit-transition:all 0.2s linear;
+}
+
+.ui-actionsheet .am-actionsheet-up{
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-transition:all 0.2s linear;
+}

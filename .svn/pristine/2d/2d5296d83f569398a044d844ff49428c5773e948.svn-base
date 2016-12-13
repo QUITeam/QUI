@@ -1,0 +1,72 @@
+
+.ui-tooltips{
+    width:100%;
+    position: relative;
+    z-index: $z-index-tooltips;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: $font-size-info;
+    i{
+        display: inline-block;
+        margin-right: 6px;
+        width: 20px;
+        height: 1px;
+        &:before{
+            @include icon;
+            content: $icon-warn;
+            font-size: 20px;
+            color: #FE6C6C;
+        }
+    }
+}
+.ui-tooltips-cnt{
+    line-height: $line-height-bar;
+    height: $line-height-bar;
+    padding-left: 12px;
+    padding-right: 32px;
+    background-color: rgba(#FFDADA,.95);
+    color: #000;
+    @include nowrap;
+    .ui-icon-close:before{
+        color: #938F87;
+        margin-left: -10px;
+        position: absolute;
+        right: 12px;
+        top: 0;
+    }
+
+}
+// .ui-tooltips-warn .ui-tooltips-cnt{
+//     background-color: rgba( 255, 242, 183 ,.95);
+//     color: #000;
+// }
+.ui-tooltips:active .ui-tooltips-cnt{
+    opacity: .5;
+}
+.ui-tooltips-guide{
+    .ui-tooltips-cnt{
+        background-color: rgba(#fff,.95);
+    }
+    i:before{
+        @include icon;
+        content: $icon-info;
+        font-size: 20px;
+        color: #12B7F5;
+    }
+
+}
+.ui-tooltips-cnt-link:after{
+    @include arrowlink;
+    color: $icon-color;
+}
+.ui-tooltips-hignlight{
+    position: absolute;
+    top: 0;
+    .ui-tooltips-cnt{
+        color: #fff;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .ui-tooltips-cnt-link:after{
+        color: #fff;
+    }
+}

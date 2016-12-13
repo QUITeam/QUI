@@ -1,0 +1,32 @@
+{
+    "name": "QUI",
+    "version": "1.0.0",
+    "title": "FrozenUI",
+    "homepage": "https://github.com/frozenui/frozenui",
+    "author": "fayching",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/frozenui/frozenui.git"
+    },
+    "licenses": "MIT",
+    "description": "为移动端web而生",
+    "bugs": {
+        "url": "https://github.com/frozenui/frozenui/issues"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.4",
+        "grunt-autoprefixer": "^1.0.1",
+        "grunt-contrib-concat": "^0.5.1",
+        "grunt-contrib-cssmin": "~0.6.1",
+        "grunt-contrib-imagemin": "^0.8.1",
+        "grunt-contrib-sass": "0.7.0",
+        "grunt-contrib-watch": "0.4.3",
+        "grunt-contrib-copy": "~0.5.0",
+        "grunt-include-replace": "^3.0.0",
+        "load-grunt-tasks": "^3.1.0",
+        "time-grunt": "^1.1.0",
+        "grunt-text-replace": "^0.4.0",
+        "grunt-contrib-connect": "^0.11.2"
+    },
+    "main": "Gruntfile.js"
+}

@@ -1,0 +1,40 @@
+
+.ui-icon-qq,
+.ui-icon-qq-off{
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+}
+.ui-icon-qq:after{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/vip/icon_vip.png) center;
+    background-size: 24px auto;
+    background-position: 0 0;
+    position: absolute;
+    line-height: 100px;
+    top: -13px;
+}
+.ui-icon-vip,
+.ui-icon-svip,
+.ui-icon-yearsvip,
+.ui-icon-yearvip{
+    @extend .ui-icon-qq;
+}
+
+.ui-icon-svip:after{
+    background-position: 0 -25px;
+}
+.ui-icon-vip:after{
+    background-position: 0 -50px;
+}
+.ui-icon-yearsvip:after{
+    background-position: 0 -75px;
+}
+.ui-icon-yearvip:after{
+    background-position: 0 -100px;
+}

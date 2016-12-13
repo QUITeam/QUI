@@ -1,0 +1,89 @@
+
+@@include('include/header.html')
+<h1>QUI</h1>
+<h2>让SNG的产品体验更统一</h2>
+    <section id="list">
+        <table class="demo-item ui-table ui-border">
+            <tbody class="demo-block">
+                <tr class="">
+                    <td class="ui-border-t" data-href="btn.html">
+                        <div>
+                            <div class="icon-button icon"></div>
+                            <div class="tit">Button</div>
+                        </div>
+                    </td>
+                    <td class="ui-border-t" data-href="list.html">
+                        <div>
+                            <div class="icon-cell icon"></div>
+                            <div class="tit">Cell</div>
+                        </div>
+                    </td>
+                    <td class="ui-border-t" data-href="toast.html">
+                        <div>
+                            <div class="icon-toast icon"></div>
+                            <div class="tit">Toast</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ui-border-t" data-href="dialog.html">
+                        <div>
+                            <div class="icon-dialog icon"></div>
+                            <div class="tit">Dialog</div>
+                        </div>
+                    </td>
+                    <td class="ui-border-t" data-href="panel.html">
+                        <div>
+                            <div class="icon-panel icon"></div>
+                            <div class="tit">Panel</div>
+                        </div>
+                    </td>
+                    <td class="ui-border-t" data-href="actionsheet.html">
+                        <div>
+                            <div class="icon-actionsheet icon"></div>
+                            <div class="tit">ActionSheet</div>
+                        </div>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="ui-border-t" data-href="tab.html">
+                        <div>
+                            <div class="icon-tab icon"></div>
+                            <div class="tit">Tab</div>
+                        </div>
+                    </td>
+                    <td class="ui-border-t ui-border-r" data-href="grid.html">
+                        <div>
+                            <div class="icon-searchbar icon"></div>
+                            <div class="tit">Grid</div>
+                        </div>
+                    </td>
+                    <td class="ui-border-t" data-href="form.html">
+                        <div>
+                            <div class="icon-actionsheet icon"></div>
+                            <div class="tit">Textfield</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <script>
+
+    $('#list td').click(function(){
+
+
+        if($(this).data('href')){
+            location.href= $(this).data('href');
+        }
+
+    });
+
+
+    </script>
+</section><!-- /.ui-container-->
+
+
+ @@include('include/footer.html')
